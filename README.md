@@ -26,7 +26,7 @@ One of the issues with deleting and recreating a fly.io machine has is that it w
 
 ![image](https://github.com/hatonthecat/Fly.ioTests/assets/76194453/218eb3e5-141a-46c8-b60a-7f569be9f4ab)
 
-New host is pler1.fly.dev
+New host is https://pler1.fly.dev
 
 
 
