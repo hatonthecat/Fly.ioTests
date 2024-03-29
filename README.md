@@ -19,7 +19,14 @@ A different DB that GoToSocial can also uses is SQLite. I am curious whether the
 whereas Upstash Redis allows a free account with [up to](https://upstash.com/pricing): 
 
 Max Commands Per Second: 1,000
+
 Daily Command Limit: 10,000
+
+One of the issues with deleting and recreating a fly.io machine has is that it won't allow me to reuse the name for a machine that was deleted. Whether this is because there is a config file with the same name, or because it is stored on some directory on my PC, or on fly.io, I am not sure. In any case, if there is a name that you want to use, you might need to choose wisely as it might be taken!
+
+![image](https://github.com/hatonthecat/Fly.ioTests/assets/76194453/218eb3e5-141a-46c8-b60a-7f569be9f4ab)
+
+
 
 
 
