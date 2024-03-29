@@ -28,6 +28,8 @@ One of the issues with deleting and recreating a fly.io machine has is that it w
 
 New host is https://pler1.fly.dev
 
+found an interesting setup: https://icyphox.sh/blog/honk-fly/
 
+One of the nice things about Pleroma is that they set up a Gopher interface: https://blog.soykaf.com/post/gopher-support-in-pleroma/
 
-
+But there are a lot of interesting things to learn about Activity Pub before I can even work on Gopher. 
