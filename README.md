@@ -6,7 +6,7 @@ I set up a Fly.io machine attempting to run Pleroma using this [guide](https://s
 
 ![image](https://github.com/hatonthecat/Fly.ioTests/assets/76194453/01e761ec-29e1-4769-801f-33893f0ce74e)
 
-Picture of my VM setup hosted on a U.S. server. So far I have a pre-configured "Hello World": ~~https://plero.fly.dev/~~ (the site may be was replaced with one below) 
+Picture of my VM setup hosted on a U.S. server. So far I have a pre-configured "Hello World": ~~https://plero.fly.dev/~~ (the site was replaced with one below) 
 
 This test shows some interesting benchmarks, which can show the loading times for small jpgs and png files: https://benhoyt.com/writings/flyio/#load-testing This thread details additional benchmark stats: https://community.fly.io/t/this-is-only-possible-on-fly/12075/2
 
