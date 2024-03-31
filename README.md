@@ -56,7 +56,8 @@ _Why do I need object storage?_
 
 _These buckets are used to store images, video and audio or whatever users will want to upload. Without Object storage, you will need to use your local database, which can be slow and overloaded quickly."_
 
-Sure, it can run slow and get overloaded quickly. But how quickly, and at what size files does the local database can the DB run well before getting sluggish?
+Sure, it can run slow and get overloaded quickly. But how quickly, and at what file size limit does the local database can the DB run well before getting sluggish?
+(e.g. a local file folder storing 1000 images compressed to 300KB or less, or 10,000 images at 30KB or less?)
 
 https://fly.io/docs/litefs/getting-started-fly/
 
