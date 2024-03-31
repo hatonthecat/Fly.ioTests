@@ -49,12 +49,12 @@ https://gist.github.com/mheffner/a367e4f8424d937c511949d2d42c7943 Mastodon on Fl
 
 from: https://marketplace.digitalocean.com/apps/mastodon :
 
-"Optional: Deploy and Connect to Object Storage (DigitalOcean Spaces Object Storage, Wasabi, Minio or AWS S3)
-You’ll need access credentials for your preferred storage system. This guide will walk through setting up and connecting DigitalOcean Spaces Object Storage.
+_"Optional: Deploy and Connect to Object Storage (DigitalOcean Spaces Object Storage, Wasabi, Minio or AWS S3)
+You’ll need access credentials for your preferred storage system. This guide will walk through setting up and connecting DigitalOcean Spaces Object Storage._
 
-Why do I need object storage?
+_Why do I need object storage?_
 
-These buckets are used to store images, video and audio or whatever users will want to upload. Without Object storage, you will need to use your local database, which can be slow and overloaded quickly."
+_These buckets are used to store images, video and audio or whatever users will want to upload. Without Object storage, you will need to use your local database, which can be slow and overloaded quickly."_
 
 Sure, it can run slow and get overloaded quickly. But how quickly, and at what size files does the local database can the DB run well before getting sluggish?
 
