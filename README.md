@@ -57,7 +57,7 @@ _Why do I need object storage?_
 _These buckets are used to store images, video and audio or whatever users will want to upload. Without Object storage, you will need to use your local database, which can be slow and overloaded quickly."_
 
 Sure, it can run slow and get overloaded quickly. But how quickly, and at what file size limit should the local database use so that the DB run well before getting sluggish?
-(e.g. a local file folder storing 1000 images compressed to 300KB or less, or 10,000 images at 30KB or less?)
+(e.g. a local file folder storing 1000 images compressed to 300KB or less, or 10,000 images at 30KB or less?) Or 100 images maxing out at 10KB? That would only be 1MB of storage. Small enough to not matter. The files could also be routinely backed up, but I am skeptical of this solution in all cases. The S3 backup is practical for testing, but relying on too many servers might not be ideal. See: https://solar.lowtechmagazine.com/2023/06/rebuilding-a-solar-powered-website/ Is what I have in mind
 
 https://fly.io/docs/litefs/getting-started-fly/
 
