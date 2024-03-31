@@ -47,6 +47,16 @@ https://github.com/tursodatabase/libsql
 
 https://gist.github.com/mheffner/a367e4f8424d937c511949d2d42c7943 Mastodon on Fly.io (with Redis, which supports HyperLogLog) (may need more than 256MB with that setup)
 
+from: https://marketplace.digitalocean.com/apps/mastodon :
+
+"Optional: Deploy and Connect to Object Storage (DigitalOcean Spaces Object Storage, Wasabi, Minio or AWS S3)
+You’ll need access credentials for your preferred storage system. This guide will walk through setting up and connecting DigitalOcean Spaces Object Storage.
+
+Why do I need object storage?
+
+These buckets are used to store images, video and audio or whatever users will want to upload. Without Object storage, you will need to use your local database, which can be slow and overloaded quickly."
+
+Sure, it can run slow and get overloaded quickly. But how quickly, and at what size files does the local database can the DB run well before getting sluggish?
 
 https://fly.io/docs/litefs/getting-started-fly/
 
