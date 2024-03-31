@@ -27,6 +27,8 @@ One of the issues with deleting and recreating a fly.io machine has is that it w
 
 ![image](https://github.com/hatonthecat/Fly.ioTests/assets/76194453/218eb3e5-141a-46c8-b60a-7f569be9f4ab)
 
+
+
 New host is https://pler1.fly.dev
 
 found an interesting setup: https://icyphox.sh/blog/honk-fly/
@@ -34,3 +36,17 @@ found an interesting setup: https://icyphox.sh/blog/honk-fly/
 One of the nice things about Pleroma is that they set up a Gopher interface: https://blog.soykaf.com/post/gopher-support-in-pleroma/
 
 But there are a lot of interesting things to learn about Activity Pub before I can even work on Gopher. 
+
+Additional resources:
+--
+https://fly.io/blog/all-in-on-sqlite-litestream/
+
+https://fly.io/blog/litefs-cloud/
+
+https://github.com/tursodatabase/libsql
+
+https://gist.github.com/mheffner/a367e4f8424d937c511949d2d42c7943 Mastodon on Fly.io (with Redis, which supports HyperLogLog) (may need more than 256MB with that setup)
+
+
+https://fly.io/docs/litefs/getting-started-fly/
+
