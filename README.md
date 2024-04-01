@@ -45,6 +45,12 @@ https://fly.io/blog/litefs-cloud/
 
 https://github.com/tursodatabase/libsql
 
+https://fnordig.de/2022/11/21/gotosocial-on-fly-io/
+
+https://github.com/badboy/gotosocial-fly
+
+https://github.com/kwaa/flytosocial
+
 https://gist.github.com/mheffner/a367e4f8424d937c511949d2d42c7943 Mastodon on Fly.io (with Redis, which supports HyperLogLog) (may need more than 256MB with that setup)
 
 from: https://marketplace.digitalocean.com/apps/mastodon :
