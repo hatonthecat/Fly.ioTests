@@ -67,3 +67,24 @@ Sure, it can run slow and get overloaded quickly. But how quickly, and at what f
 
 https://fly.io/docs/litefs/getting-started-fly/
 
+----
+
+April 1, Log 
+---
+
+Using a [tutorial](https://fnordig.de/2022/11/21/gotosocial-on-fly-io/) above, I was able to host a GoToSocial instance:
+
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/4cd18f85-e0a6-45e2-9ab5-80db63b67b04)
+
+Some errors I made in the process (may or may not be common to others but I am a newb):
+
+I assumed Dockerfile meant Docker _image,_ which caused delays (searching for image, where it downloads it via CLI, when done correctly)
+
+I had not understood the config.yaml and fly.toml differences (was somewhat confused by so many config files). 
+
+While I haven't setup my account nor SMTP yet, this is a magnitude further than my "Hello World" Pleroma "server" without a front-end (and back end too, probably- an accessible one, at least, that I had the other day). This is also the first SQLite instance I have running (the other was PostgreSQL).
+
+fly.io dashboard:
+
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/ae719d9c-5993-4714-b445-7256bf57a2fe)
+
