@@ -1,0 +1,87 @@
+#original: https://raw.githubusercontent.com/superseriousbusiness/gotosocial/main/example/config.yaml
+
+log-level: "info"
+log-db-queries: false
+application-name: "gotosocial"
+
+landing-page-user: ""
+host: "mac.fly.dev"
+account-domain: "mac.fly.dev"
+protocol: "https"
+bind-address: "0.0.0.0"
+port: 8080
+trusted-proxies:
+  - "127.0.0.1/32"
+  - "::1"
+
+db-type: "sqlite"
+db-address: "/gotosocial/storage/sqlite.db"
+db-database: "gotosocial"
+
+web-template-base-dir: "./web/template/"
+web-asset-base-dir: "./web/assets/"
+
+instance-expose-peers: false
+instance-expose-suspended: false
+instance-expose-public-timeline: false
+instance-deliver-to-shared-inboxes: true
+
+accounts-registration-open: true
+accounts-approval-required: true
+accounts-reason-required: false
+accounts-allow-custom-css: false
+
+media-image-max-size: 15760
+media-video-max-size: 43040
+media-description-min-chars: 0
+media-description-max-chars: 100
+media-remote-cache-days: 3
+media-emoji-local-max-size: 20200
+media-emoji-remote-max-size: 20400
+
+storage-backend: "local"
+storage-local-base-path: "/gotosocial/storage"
+
+statuses-max-chars: 100
+statuses-cw-max-chars: 50
+statuses-poll-max-options: 3
+statuses-poll-option-max-chars: 20
+statuses-media-max-files: 1
+
+letsencrypt-enabled: false
+
+# Config for sending emails via an smtp server. See https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
+
+# String. The hostname of the smtp server you want to use.
+# If this is not set, smtp will not be used to send emails, and you can ignore the other settings.
+# Examples: ["mail.example.org", "localhost"]
+# Default: ""
+smtp-host: ""
+
+# Int. Port to use to connect to the smtp server.
+# Examples: []
+# Default: 0
+smtp-port: 0
+
+# String. Username to use when authenticating with the smtp server.
+# This should have been provided to you by your smtp host.
+# This is often, but not always, an email address.
+# Examples: ["maillord@example.org"]
+# Default: ""
+smtp-username: ""
+
+# String. Password to use when authenticating with the smtp server.
+# This should have been provided to you by your smtp host.
+# Examples: ["1234", "password"]
+# Default: ""
+smtp-password: ""
+
+# String. 'From' address for sent emails.
+# Examples: ["mail@example.org"]
+# Default: ""
+smtp-from: ""
+
+syslog-enabled: false
+
+advanced-cookies-samesite: "lax"
+advanced-rate-limit-requests: 300
