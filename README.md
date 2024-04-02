@@ -90,5 +90,41 @@ fly.io dashboard:
 
 ![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/ae719d9c-5993-4714-b445-7256bf57a2fe)
 
+April 2nd Log
+--
 
+https://mac.fly.dev/ Set up a new instance. Signup hasn't been set up yet. I had a mc.fly.dev before (but since it was taken I could not reuse it, not knowing how to).
 
+Definitely shorter than the other one. While it deploys two machines as the default (which are still free on fly.io, which allows up to 3), I am searching the option to set only one, to free up machines in case I want to test something else. Having 100% uptime is not a priority, as long as the machine can restart itself, which fly.io is programmed to do. 
+
+I also edited the [config.yaml](https://github.com/badboy/gotosocial-fly/blob/main/config.yaml) file to limit the maximum image, video, emoji, status and poll character/file size count:
+
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/78301cd3-16db-466c-98bf-0c9ece33cfa0)
+
+"accounts-registration-open: true
+accounts-approval-required: true
+accounts-reason-required: false
+accounts-allow-custom-css: false
+
+media-image-max-size: 15760
+media-video-max-size: 43040
+media-description-min-chars: 0
+media-description-max-chars: 100
+media-remote-cache-days: 3
+media-emoji-local-max-size: 20200
+media-emoji-remote-max-size: 20400
+
+storage-backend: "local"
+storage-local-base-path: "/gotosocial/storage"
+
+statuses-max-chars: 100
+statuses-cw-max-chars: 50
+statuses-poll-max-options: 3
+statuses-poll-option-max-chars: 20
+statuses-media-max-files: 1
+
+letsencrypt-enabled: false"
+
+While this might sound parsimonious, it is designed to function more as an extremely light status exchange board that could potentially accomodate several or hundreds of accounts, even on 256MB of RAM. With a concurrency rivalling that of LMDB. (Well, maybe not that lightning fast, but Tigris is working on some interesting things https://fly.io/blog/tigris-public-beta/). In other words, how to load test a single instance, similar to this, but measuring concurrent fediverse postings and access times: https://benhoyt.com/writings/flyio/#load-testing
+
+The theory is, by limiting the images to 20KB or less, one could have a mini-instance that can support 10-100x the typical GoToSocial instances. 
