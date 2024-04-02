@@ -86,5 +86,9 @@ While I haven't setup my account nor SMTP yet, this is a magnitude further than 
 
 fly.io dashboard:
 
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/93ea41b4-1267-4d8c-a7e4-e4ef9b6eb5e5)
+
 ![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/ae719d9c-5993-4714-b445-7256bf57a2fe)
+
+
 
