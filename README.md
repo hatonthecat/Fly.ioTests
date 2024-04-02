@@ -29,7 +29,7 @@ One of the issues with deleting and recreating a fly.io machine has is that it w
 
 
 
-New host is https://pler1.fly.dev
+New host is ~~https://pler1.fly.dev~~ (See 4/1 log below)
 
 found an interesting setup: https://icyphox.sh/blog/honk-fly/
 
