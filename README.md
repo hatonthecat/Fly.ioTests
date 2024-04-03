@@ -138,10 +138,6 @@ A 128Kbps internet connection (similar to DSL in the early 00s) allowed approxim
 
 In some regards, HTTP requests typically use more overhead than JSON or other lightweight protocols, thus the instance can be optimized further. However, without using Gemini/Gopher protocols (although bridges and inter-operable clients would be an added benefit), it is worthwhile to examine the different combinations of bandwidth allocation and rate-limited that can maintain a steady uptime for pre-defined usage estimates.
 
-Approx 4.33GB per day would be alotted in a 31 day month:
-![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/8655829b-d3f8-4cec-900e-6ccdee5704e6)
-
-
 "Outbound data transfer
 We bill for outbound data transfer from the region a VM is running in, inbound transfer is free.
 
