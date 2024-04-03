@@ -129,3 +129,12 @@ While this might sound parsimonious, it is designed to function more as an extre
 
 The theory is, by limiting the images to 20KB or less, one could have a mini-instance that can support 10-100x the typical GoToSocial user accounts. 
 One thing that would benefit a service would be an image resize tool that automatically calculates the maximum size of the desired image and compresses+resizes the image to fit under the instance's designated file size limit, so that one doesn't need to use countless image resizing programs (See [Paint Shop Pro](https://github.com/EI2030/Low-power-E-Paper-OS/blob/master/Hyperlinks%20and%20Scratchpad.md), for example).
+
+4/3/2024 Log
+--
+Using Fly.io's 100GB/month limit for a low cost single VM (shared CPU), I will rely on a 31 day month to estimate the daily average bandwidth alotted for a single instance (including all of the user accounts). 100GB/31= 3.22GB (I round down to avoid overage). 
+
+A 128Kbps internet connection (similar to DSL in the early 90s) allowed approximately 16KB/s. Multiplied by 60 seconds, 60 minutes, and 24 hours, this 1,382,400 bytes, or approx 1.3GB. Thus a 256Kbps internet speed would reach 2.6GB per month. Assuming the GotoSocial instance were very popular and busy, with users accessing it 24 hours a day, 7 days a week, for 4 weeks, this implies the server would need to limit connections and/or requests to under 960KB per minute (on average) and 57.6MB per hour. 10s of users _might_ use that amount, if they were uploading 20KB images every minute. However, it is unlikely that this limit would be reached at that frequency. Hence, it is safe to say that the bottlneck is not the bandwidth, but the volume's ability to read and write data while maintaining other HTTP requests (boosts/follows, etc).
+
+In some regards, HTTP requests typically use more overhead than JSON or other lightweight protocols, thus the instance can be optimized further. However, without using Gemini/Gopher protocols (although bridges and inter-operable clients would be an added benefit), it is worthwhile to examine the different combinations of bandwidth allocation and rate-limited that can maintain a steady uptime for pre-defined usage estimates.
+
