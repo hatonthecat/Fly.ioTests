@@ -138,3 +138,34 @@ A 128Kbps internet connection (similar to DSL in the early 00s) allowed approxim
 
 In some regards, HTTP requests typically use more overhead than JSON or other lightweight protocols, thus the instance can be optimized further. However, without using Gemini/Gopher protocols (although bridges and inter-operable clients would be an added benefit), it is worthwhile to examine the different combinations of bandwidth allocation and rate-limited that can maintain a steady uptime for pre-defined usage estimates.
 
+Approx 4.33GB per day would be alotted in a 31 day month:
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/8655829b-d3f8-4cec-900e-6ccdee5704e6)
+
+
+"Outbound data transfer
+We bill for outbound data transfer from the region a VM is running in, inbound transfer is free.
+
+Regions	Free Allowance	Monthly Price 
+North America
+Europe
+100GB per month free	$0.02 per GB
+Asia Pacific
+Oceania
+South America
+30GB per month free	$0.04 per GB
+Africa
+India
+30 GB per month free	$0.12 per GB"
+
+https://fly.io/docs/about/pricing/
+
+
+![image](https://github.com/hatonthecat/fly.iotests/assets/76194453/6e0c4cab-66f8-411a-bd6f-71e9b62db4a9)
+
+Approximately 3.22GB per day, 134MB per hour, 2.24MB per minute, and 37.33KB per second is allotted in North American and European regions. Speed: 298.6 Kbps
+
+Approximately 967MB per day, 40.3MB per hour, 672KB per minute, and 11.2KB per second is allotted in the non-North American and non-European regions. Speed: 89.6 Kbps
+
+
+
+
