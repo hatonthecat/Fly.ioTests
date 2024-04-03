@@ -162,6 +162,8 @@ Approximately 3.22GB per day, 134MB per hour, 2.24MB per minute, and 37.33KB per
 
 Approximately 967MB per day, 40.3MB per hour, 672KB per minute, and 11.2KB per second is allotted in the non-North American and non-European regions. Speed: 89.6 Kbps
 
+Some additional resources : https://en.wikipedia.org/wiki/Microformat#Design_principles
+https://www.jsonfeed.org/
 
 
 
